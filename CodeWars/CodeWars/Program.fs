@@ -12,5 +12,10 @@ let avg list =
     List.sum (list) / (float list.Length)
 
 
+//[8 kyu] Remove exclamation marks  : Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+let removeExclamationMarks s = 
+    s
+    |> Seq.filter(fun c -> not (c='!'))
+    |> String.Concat
 
 Console.ReadKey|>ignore
