@@ -24,4 +24,14 @@ let powersOfTwo n =
 ///[8 kyu] Remove duplicates from list : Write function distinct that removes duplicate from list of numbers. The order of the sequence needs to stay the same.
 let distinct = List.distinct
 
+///[8 kyu] Is it a palindrome? : Write function isPalindrom that checks if a given string (case insensitive) is a palindrom.
+let reverse (s:string) = 
+    s
+    |> Seq.rev
+    |> String.Concat
+
+let isPalindrome s = 
+    String.Compare(s,reverse s,true) = 0
+
+
 Console.ReadKey|>ignore
