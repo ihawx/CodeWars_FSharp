@@ -7,4 +7,10 @@ let repeatStr n s =
     |> List.map(fun x -> s)
     |> String.Concat
 
+//[8 kyu] Calculate average  : Write function avg which calculates average of numbers in given list.
+let avg list = 
+    List.sum (list) / (float list.Length)
+
+
+
 Console.ReadKey|>ignore
