@@ -33,5 +33,13 @@ let reverse (s:string) =
 let isPalindrome s = 
     String.Compare(s,reverse s,true) = 0
 
+///[8 kyu] MakeLowerCase : Write function makeLowerCase.
+let makeLowerCase s = 
+    s
+    |> Seq.map(fun x -> Char.ToLower(x))
+    |> String.Concat
+
+///[8 kyu] MakeUpperCase : Write function makeUpperCase.
+let makeUpperCase (s:string) = s.ToUpper()
 
 Console.ReadKey|>ignore
