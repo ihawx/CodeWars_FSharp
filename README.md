@@ -9,3 +9,5 @@ Solved:
 - [8 kyu] Powers of 2
 - [8 kyu] Remove duplicates from list
 - [8 kyu] Is it a palindrome?
+- [8 kyu] MakeLowerCase
+- [8 kyu] MakeUpperCase
