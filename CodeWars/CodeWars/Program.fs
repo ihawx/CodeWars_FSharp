@@ -42,4 +42,15 @@ let makeLowerCase s =
 ///[8 kyu] MakeUpperCase : Write function makeUpperCase.
 let makeUpperCase (s:string) = s.ToUpper()
 
+///[8 kyu] Calculate BMI : Write function bmi that calculates body mass index (bmi = weight / height ^ 2).
+let calculateBMI weight height = weight / float height ** 2.0
+let bmi weight height =
+    match calculateBMI weight height with
+    | x when x <= 18.5 -> "Underweight"
+    | x when x > 18.5 && x <= 25.0 -> "Normal"
+    | x when x > 25.0 && x <= 30.0 -> "Overweight"
+    | x when x > 30.0 -> "Obese"
+    | _ -> "Exception"
+    
+
 Console.ReadKey|>ignore

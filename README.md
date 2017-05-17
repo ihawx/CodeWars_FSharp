@@ -11,3 +11,4 @@ Solved:
 - [8 kyu] Is it a palindrome?
 - [8 kyu] MakeLowerCase
 - [8 kyu] MakeUpperCase
+- [8 kyu] Calculate BMI
